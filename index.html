@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+        	<meta charset="utf-8"/>       
+        	<title>AngularJS</title>
+            <link rel="shortcut icon" href="favicon.ico" />
+            <link rel="stylesheet" href="css/style.css"/>
+            
+            <!-- Подключение фреймворка AngularJS -->
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>             
+        </head>        
+        <body ng-app> <!-- активация фреймворка в необходимом элементе нестандартным атрибутом ng-app -->
+            
+            <!-- Введение в AngularJS - http://angular.ru/ -->
+            <!-- AngularJS - это веб приложение, которое выполняется непосредственно на стороне клиента в веб браузере. -->
+            <!-- Инфа http://iantonov.me/page/angularjs-osnovy  - http://loftblog.ru/ -->
+            <!-- Все специальные теги и атрибуты html, поддерживаемые фреймворком AngularJS, называются директивами -->
+            
+            <!-- Использование двойных фигурных скобок обеспечивает вывод значения модели.
+                В фигурные скобки мы можем заключить любые операции, переменную, функцию.
+            -->
+            {{2+2*2}}
+            <br />
+            
+            <input type="text" ng-model="name"/>
+            Hello {{name}}<br />
+            
+            <input type="checkbox" ng-model="ShowCheck"/>
+            <div ng-show="ShowCheck">Текст, который мы увидим после клика по checkbox!</div>
+			
+			<h1>Git урок</h1>
+			<p>новое изменение файла index.html</p>
+			
+            
+            
+            
+                
+                 
+        
+        </body>
+    </html>
